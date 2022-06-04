@@ -6,6 +6,10 @@
   <link href="./tailwind-output.css" rel="stylesheet">
 </head>
 <body class="bg-black">
-    <img class="m-auto h-screen object-cover" src="./lobogo-web.png" alt="">
+    <picture>
+    <source class="m-auto h-screen object-cover" media="(orientation: landscape)" srcset="./lobogo-web.png">
+    <source class="m-auto h-screen object-cover" media="(orientation: portrait)" srcset="./lobogo-mobile.png">
+    <img class="m-auto h-screen object-cover" src="./lobogo-mobile.png">
+</picture>
 </body>
 </html>
